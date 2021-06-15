@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="ru">
 
 <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel='stylesheet' href='css/style.min.css' />
+    <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
 
-<section class='form__layout' style='background-image:url("images/bg.png");'>
-    <form class='form' action='#'>
-        <div class='container'>
-            <div class='form__header'>
-                <h1 class='form__title'>
+<section class="form__layout" style="background-image:url('images/bg.png')">
+    <div class="container">
+        <form class="form" action="#">
+            <div class="form__header">
+                <img class="form__header-img" src="images/icon.svg" alt="form-icon">
+                <h1 class="form__title">
                     Login To Your Account / Register Now
                 </h1>
             </div>
-        </div>
-    </form>
+            <div class="form__inner">
+                <div class="form__left-side">
+                    <div class="form__line">
+                        <hr class="form__line-hr">
+                    </div>
+
+                    <label class="form__label">
+                        <input class="form__input-left" id="name" type="text" placeholder="User Name">
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input-left" id="pass" type="password" placeholder="Password">
+                    </label>
+                    <div class="form__login-inner">
+                        <label class="form__label-checkbox">
+                            <input class="form__confirm" type="checkbox" id="confirm" />
+                            Remember my password
+                        </label>
+                        <button class="form__btn-login btn" type="submit">Login</button>
+                    </div>
+                </div>
+
+
+                <div class="form__right-side">
+                    <h2 class="form__right-title">Register</h2>
+                    <label class="form__label">
+                        Email
+                        <input class="form__input-right" id="email" type="email">
+                    </label>
+                    <label class="form__label">
+                        User Name
+                        <input class="form__input-right" id="user" type="text">
+                    </label>
+                    <label class="form__label">
+                        Password
+                        <input class="form__input-right" id="pas" type="password">
+                    </label>
+
+                    <button class="form__btn-register btn" type="submit">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </section>
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
-<script src='js/index.min.js'></script>
+<script src="js/index.min.js"></script>
 </body>
 
 </html>
