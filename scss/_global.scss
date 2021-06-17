@@ -1,0 +1,37 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1130px;
+}
+
+.form__layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    padding: 15px;
+    width: 152px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+    background-image: linear-gradient(-30deg, #4fb6e2 26%, #004c6c 73%);
+    background-color: #00a0bc;
+    cursor: pointer;
+    &:focus {
+        outline: solid;
+    }
+}
