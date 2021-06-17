@@ -1,125 +1,125 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="css/style.min.css" />
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
 
-    <body>
-        <section class="form__layout" style="background-image: url('images/bg.png')">
-            <div class="container">
-                <div class="form">
-                    <div class="form__header">
-                        <img class="form__header-img" src="images/icon.svg" alt="form-icon" />
-                        <h1 class="form__title">Login To Your Account / Register Now</h1>
-                    </div>
-                    <div class="form__inner">
-                        <form class="form__left" id="form__left" action="<?php echo $_POST['name']; ?>" method="post">
-                            <div class="form__line">
-                                <hr class="form__line-hr" />
-                            </div>
-                            <div class="form__control-left">
-                                <label class="form__label-left" for="name"></label>
-                                <input
-                                    class="form__input-left"
-                                    id="name"
-                                    type="text"
-                                    placeholder="User Name"
-                                    minlength="2"
-                                />
-                                <img
-                                    class="form__img-error"
-                                    src="images/error.png"
-                                    alt="error img"
-                                />
-                                <img class="form__img-done" src="images/done.png" alt="done img" />
-                                <small class="small"></small>
-                            </div>
-                            <div class="form__control-left">
-                                <label class="form__label-left" for="pass"></label>
-                                <input
-                                    class="form__input-left"
-                                    id="pass"
-                                    type="password"
-                                    placeholder="Password"
-                                    minlength="4"
-                                />
-                                <img
-                                    class="form__img-error"
-                                    src="images/error.png"
-                                    alt="error img"
-                                />
-                                <img class="form__img-done" src="images/done.png" alt="done img" />
-                                <small class="small"></small>
-                            </div>
-                            <div class="form__login-inner">
-                                <label class="form__label-checkbox">
-                                    <input
-                                        class="form__confirm"
-                                        type="checkbox"
-                                        id="confirm"
-                                        data-tooltip="You no longer need to enter a password every time you use this site"
-                                    />
-                                    Remember my password
-                                </label>
-                                <button class="form__btn-login btn" type="submit">LoginL</button>
-                            </div>
-                        </form>
+<body>
+<section class="form__layout" style="background-image: url('images/bg.png')">
+  <div class="container">
+    <div class="form">
+      <div class="form__header">
+        <img class="form__header-img" src="images/icon.svg" alt="form-icon" />
+        <h1 class="form__title">Login To Your Account / Register Now</h1>
+      </div>
+      <div class="form__inner">
+        <form class="form__left" id="form__left" >
+          <div class="form__line">
+            <hr class="form__line-hr" />
+          </div>
+          <div class="form__control-left">
+            <label class="form__label-left" for="name"></label>
+            <input
+              class="form__input-left"
+              id="name"
+              type="text"
+              placeholder="User Name"
+              minlength="2"
+            />
+            <img
+              class="form__img-error"
+              src="images/error.png"
+              alt="error img"
+            />
+            <img class="form__img-done" src="images/done.png" alt="done img" />
+            <small class="small"></small>
+          </div>
+          <div class="form__control-left">
+            <label class="form__label-left" for="pass"></label>
+            <input
+              class="form__input-left"
+              id="pass"
+              type="password"
+              placeholder="Password"
+              minlength="4"
+            />
+            <img
+              class="form__img-error"
+              src="images/error.png"
+              alt="error img"
+            />
+            <img class="form__img-done" src="images/done.png" alt="done img" />
+            <small class="small"></small>
+          </div>
+          <div class="form__login-inner">
+            <label class="form__label-checkbox">
+              <input
+                class="form__confirm"
+                type="checkbox"
+                id="confirm"
+                data-tooltip="You no longer need to enter a password every time you use this site"
+              />
+              Remember my password
+            </label>
+            <button class="form__btn-login btn" type="submit">Login</button>
+          </div>
+        </form>
 
-                        <form class="form__right" id="form__right">
-                            <h2 class="form__right-title">Register</h2>
-                            <div class="form__control-right">
-                                <label class="form__label-right" for="email">Email</label>
-                                <input class="form__input-right" id="email" type="email" />
-                                <img
-                                    class="form__img-error"
-                                    src="images/error.png"
-                                    alt="error img"
-                                />
-                                <img class="form__img-done" src="images/done.png" alt="done img" />
-                                <small class="small"></small>
-                            </div>
-                            <div class="form__control-right">
-                                <label class="form__label-right" for="user">User Name</label>
-                                <input
-                                    class="form__input-right"
-                                    id="user"
-                                    type="text"
-                                    minlength="2"
-                                />
-                                <img
-                                    class="form__img-error"
-                                    src="images/error.png"
-                                    alt="error img"
-                                />
-                                <img class="form__img-done" src="images/done.png" alt="done img" />
-                                <small class="small"></small>
-                            </div>
-                            <div class="form__control-right">
-                                <label class="form__label-right" for="password">Password</label>
-                                <input
-                                    class="form__input-right"
-                                    id="password"
-                                    type="password"
-                                    minlength="4"
-                                />
-                                <img
-                                    class="form__img-error"
-                                    src="images/error.png"
-                                    alt="error img"
-                                />
-                                <img class="form__img-done" src="images/done.png" alt="done img" />
-                                <small class="small"></small>
-                            </div>
-                            <button class="form__btn-register btn" type="submit">Register</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <form class="form__right" id="form__right">
+          <h2 class="form__right-title">Register</h2>
+          <div class="form__control-right">
+            <label class="form__label-right" for="email">Email</label>
+            <input class="form__input-right" id="email" type="email" />
+            <img
+              class="form__img-error"
+              src="images/error.png"
+              alt="error img"
+            />
+            <img class="form__img-done" src="images/done.png" alt="done img" />
+            <small class="small"></small>
+          </div>
+          <div class="form__control-right">
+            <label class="form__label-right" for="user">User Name</label>
+            <input
+              class="form__input-right"
+              id="user"
+              type="text"
+              minlength="2"
+            />
+            <img
+              class="form__img-error"
+              src="images/error.png"
+              alt="error img"
+            />
+            <img class="form__img-done" src="images/done.png" alt="done img" />
+            <small class="small"></small>
+          </div>
+          <div class="form__control-right">
+            <label class="form__label-right" for="password">Password</label>
+            <input
+              class="form__input-right"
+              id="password"
+              type="password"
+              minlength="4"
+            />
+            <img
+              class="form__img-error"
+              src="images/error.png"
+              alt="error img"
+            />
+            <img class="form__img-done" src="images/done.png" alt="done img" />
+            <small class="small"></small>
+          </div>
+          <button class="form__btn-register btn" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <script src="js/index.min.js"></script>
-    </body>
+<script src="js/index.min.js"></script>
+</body>
 </html>
