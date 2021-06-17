@@ -1,43 +1,43 @@
-const form = document.getElementById('form__left');
-
-const name = document.getElementById('name');
-const pass = document.getElementById('pass');
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    checkInputs();
-});
-
-function checkInputs() {
-    const nameValue = name.value.trim();
-    const passValue = pass.value.trim();
-
-    if (nameValue === '') {
-        setErrorFor(name, 'Username cannot be blank');
-    } else {
-        setSuccessFor(name);
-    }
-
-    if (passValue === '') {
-        setErrorFor(pass, 'Password cannot be blank');
-    } else {
-        setSuccessFor(pass);
-    }
-}
-
-function setErrorFor(input, message) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('.small');
-    small.innerText = message;
-
-    formControl.className = 'form__control-left error';
-}
-
-function setSuccessFor(input) {
-    const formControl = input.parentElement;
-
-    formControl.className = 'form__control-left success';
-}
+// const form = document.getElementById('form__left');
+//
+// const name = document.getElementById('name');
+// const pass = document.getElementById('pass');
+//
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     checkInputs();
+// });
+//
+// function checkInputs() {
+//     const nameValue = name.value.trim();
+//     const passValue = pass.value.trim();
+//
+//     if (nameValue === '') {
+//         setErrorFor(name, 'Username cannot be blank');
+//     } else {
+//         setSuccessFor(name);
+//     }
+//
+//     if (passValue === '') {
+//         setErrorFor(pass, 'Password cannot be blank');
+//     } else {
+//         setSuccessFor(pass);
+//     }
+// }
+//
+// function setErrorFor(input, message) {
+//     const formControl = input.parentElement;
+//     const small = formControl.querySelector('.small');
+//     small.innerText = message;
+//
+//     formControl.className = 'form__control-left error';
+// }
+//
+// function setSuccessFor(input) {
+//     const formControl = input.parentElement;
+//
+//     formControl.className = 'form__control-left success';
+// }
 
 const formR = document.getElementById('form__right');
 
