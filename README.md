@@ -1,6 +1,6 @@
 To start project you must have installed Node JS on your local PC
 
-clone repository "git clone https://github.com/RomanVinichenko/taskLending.git"
+clone repository "git clone https://github.com/RomanVinichenko/taskForm.git"
 
 in terminal run "npm insatll"
 
@@ -10,7 +10,7 @@ run "gulp" for start project
 
 Для запуска проекта необходимо установить пакетный модуль Node JS, глобально на вашем ПК
 
-Склонируйте репозиторий с помощью команды "git clone https://github.com/RomanVinichenko/taskLending.git"
+Склонируйте репозиторий с помощью команды "git clone https://github.com/RomanVinichenko/taskForm.git"
 
 Установите пакетные модули командой "npm install"
 
