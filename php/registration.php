@@ -9,4 +9,4 @@ if ($_POST["message"]) {
 
 }
 
-echo htmlspecialchars($_POST['name']); ?>.
+echo htmlspecialchars($_POST['name']);
